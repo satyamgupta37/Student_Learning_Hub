@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Learning Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Learning Hub</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#topics">Topics</a>
+            <a href="#videos">Videos</a>
+            <a href="#signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Student Learning Hub</h2>
+        <p>Learn HTML, CSS and JavaScript easily.</p>
+        <button onclick="showMessage()">Explore More</button>
+    </section>
+
+    <section id="topics">
+        <h2>Topics Covered</h2>
+
+        <table>
+            <tr>
+                <th>Sr No.</th>
+                <th>Topic</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>HTML</td>
+                <td>Structure of Webpages</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CSS</td>
+                <td>Website Designing</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>JavaScript</td>
+                <td>Website Functionality</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Forms</td>
+                <td>Creating Registration Forms</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="videos">
+        <h2>Apna College Coding Videos</h2>
+
+        <h3>HTML Tutorial</h3>
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/HcOc7P5BMi4"
+            allowfullscreen>
+        </iframe>
+
+        <h3>CSS Tutorial</h3>
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/ESnrn1kAD4E"
+            allowfullscreen>
+        </iframe>
+
+        <p>
+            <a href="https://www.youtube.com/@ApnaCollegeOfficial"
+               target="_blank">
+               Visit Apna College YouTube Channel
+            </a>
+        </p>
+    </section>
+
+    <section id="signup">
+        <h2>Student Signup Form</h2>
+
+        <form id="signupForm">
+
+            <label>Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Password:</label>
+            <input type="password" id="password" required>
+
+            <label>Select Course:</label>
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option>BSc IT</option>
+                <option>BSc CS</option>
+                <option>BCA</option>
+            </select>
+
+            <button type="submit">Sign Up</button>
+
+        </form>
+
+        <p id="result"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Student Learning Hub</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
